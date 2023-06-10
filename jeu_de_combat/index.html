@@ -1,0 +1,98 @@
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- red container div -->
+ <div  style=" position: relative;  
+               display: inline-block; ">
+
+    <!--smaller red  container div -->
+    <div style="position: absolute; 
+                display: flex;  
+                width: 100%;  
+                align-items: center; 
+                padding: 20px; " >
+
+    <!-- player health -->
+    <div style=" position: relative;
+                 height: 30px; 
+                 width: 100%; 
+                 display: flex; 
+                 justify-content: flex-end; ">
+
+       <div  style=" background-color: #EF4444; 
+                     height: 30px; 
+                     width: 100%;
+                     border-radius: 40px;
+                     border-style:solid;
+                     border-color: #4D7C0F;"></div>
+
+       <div id= "playerHealth"  
+            style="position: absolute; 
+                   background: #65A30D;  
+                   top: 0;  
+                   right: 0;  
+                   bottom: 0; 
+                   width: 100%;
+                   border-radius: 40px;
+                   "></div>       
+    </div>
+    <!-- timer -->
+    <div id="timer" style="background-color: #991B1B; 
+                height: 70px;  
+                width: 100px;  
+                flex-shrink:0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 40px;
+                margin: 10px; 
+                border-style:solid;
+                border-color: #4D7C0F;
+                font-family: Blippo, fantasy;
+                font-size:xxx-large;
+                color:#FEFCE8; " >10</div>
+                
+    <!-- enemy health -->
+    <div  style=" position: relative; 
+                  height: 30px; 
+                  width: 100%;">
+
+        <div style= "background-color: #EF4444;  
+                     height: 30px;
+                     border-radius: 40px;
+                     border-style:solid;
+                     border-color: #4D7C0F;"></div>
+
+        <div id="enemyHealth"   
+             style="position: absolute;  
+                    background: #65A30D;  
+                    top: 0;  
+                    right: 0;  
+                    bottom: 0; 
+                    left: 0;
+                    border-radius: 40px;" ></div> 
+    </div>
+    
+</div>
+<div id="displayText" style="position: absolute; 
+            color: #EAB308; 
+            align-items: center; 
+            justify-content: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: none;
+            font-family: Blippo, fantasy;
+            font-size:xxx-large;">Tie</div>
+  <canvas></canvas>
+ </div>
+ <script src="js/utils.js"></script>
+ <script src="js/classes.js"></script>
+ <script src="index.js"></script>
+</body>
